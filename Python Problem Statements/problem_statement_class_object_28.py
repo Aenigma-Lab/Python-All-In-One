@@ -11,7 +11,7 @@ class Laptop:
         self.laptop_price = price
 
     def laptop_discount(self):
-        discount_price = (self.discount_percent/100)*self.laptop_price
+        discount_price = (self.discount_percent/100)*self.laptop_price # use self.discount_percent
         return self.laptop_price - discount_price
     
 
@@ -24,4 +24,7 @@ print(laptop_3.laptop_discount())
 
 print(laptop_1.laptop_discount())
 print(laptop_2.laptop_discount())
+
+
+print(laptop_3.__dict__)
 
