@@ -14,7 +14,7 @@ class Phone:
 
     def make_a_call(self, phone_number):
         # This method simulates making a call
-        return f"Calling {phone_number} ..."
+        return f"Calling from {self.brand} and number is {phone_number} ..."
 
 # Derived / Child class
 class Smartphone(Phone):
@@ -29,14 +29,14 @@ class Smartphone(Phone):
         self.rom = rom
         self.rear_camera = rear_camera
 
-    def full_specification(self):
-        # Overriding the full_specification method to include additional smartphone details
-        # Using super() to call the parent method and adding extra details for Smartphone
-        phone_spec = super().full_specification()  # Get the full specification from the parent class
-        return f"{phone_spec}, RAM: {self.ram}, ROM: {self.rom}, Rear Camera: {self.rear_camera}"
+    # def full_specification(self):
+    #     # Overriding the full_specification method to include additional smartphone details
+    #     # Using super() to call the parent method and adding extra details for Smartphone
+    #     phone_spec = super().full_specification()  # Get the full specification from the parent class
+    #     return f"{phone_spec}, RAM: {self.ram}, ROM: {self.rom}, Rear Camera: {self.rear_camera}"
 
 # Creating an instance of the base class (Phone)
-phone = Phone('Nokia', 'Nokia 1100', 1599)
+phone = Phone('Nokia', 'Nokia 1100', -1599)
 
 # Creating an instance of the derived class (Smartphone)
 smartphone = Smartphone('Apple', 'iPhone 16 Pro Plus', 169999, '16 GB', '256 GB', '200 MP')
