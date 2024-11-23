@@ -9,9 +9,9 @@
 
 class Phone:
     def __init__(self, brand, model_name, price):
-        self.brand = brand
-        self.__model_name = model_name
-        self._price = price # accordin to naming convetion (_price) it consider as private but noting is private in python
+        self.__brand = brand
+        self.model_name = model_name
+        self._price = price # according to naming convention (_price) it consider as private but noting is private in python
 
     def make_a_call(self, phone_number):
         print(f"calling {phone_number}....")
@@ -32,5 +32,5 @@ print(phone_1._price)
 print(phone_1.__dict__) #{'brand': 'nokia', '_Phone__model_name': '1100', '_price': -1000}
 
 #------>>>>>   '_Phone__model_name' # this is not private 
-phone_1._PHone_modle_name = 'samsung'
-print(phone_1._Phone__model_name)
+phone_1._Phone__brand = 'samsung'
+print(phone_1._Phone__brand)
