@@ -24,6 +24,6 @@ name = input('Please type your name: ')
 age = input('Please type your age: ')
 print(f'hello {name }and your age is {age}')
 
-final_age = age + 5
+final_age = int(age) + 5
 print(f'{name } you will be  {final_age} in next five years.')
 
