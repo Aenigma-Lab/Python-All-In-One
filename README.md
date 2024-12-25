@@ -41,5 +41,5 @@ To get started with the code examples and tutorials:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/Python-All-In-One.git
+   git clone https://github.com/Aenigma-Lab/Python-All-In-One.git
    cd Python-All-In-One
